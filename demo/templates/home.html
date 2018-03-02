@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<!-- saved from url=(0436)https://cloud.google.com/speech/?utm_source=google&utm_medium=cpc&utm_campaign=na-US-all-en-dr-bkws-all-all-trial-b-dr-1003905&utm_content=text-ad-none-any-DEV_c-CRE_122104110967-ADGP_Hybrid+%7C+AW+SEM+%7C+SKWS+%7C+Multi+%7E+Voice+to+Text-KWID_43700021652055423-kwd-298903162255&utm_term=KW_google%20voice%20to%20text-ST_google+voice+to+text&gclid=EAIaIQobChMI_eDuuOPL2QIVBqZpCh2vhw6LEAAYASAAEgIvdvD_BwE&dclid=CN3Rnbrjy9kCFRN4YgodcfMOMQ -->
+<html lang="en" class="chekov"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><iframe height="0" width="0" src="./Speech API - Speech Recognition  _  Google Cloud Platform_files/activityi.html" style="display: none; visibility: hidden;"></iframe><script type="text/javascript" async="" src="./Speech API - Speech Recognition  _  Google Cloud Platform_files/conversion_async.js.download"></script><script type="text/javascript" async="" src="./Speech API - Speech Recognition  _  Google Cloud Platform_files/ga.js.download"></script><script type="text/javascript" async="" src="./Speech API - Speech Recognition  _  Google Cloud Platform_files/analytics.js.download"></script><script async="" src="./Speech API - Speech Recognition  _  Google Cloud Platform_files/gtm.js.download"></script><script>var a=window.devsite||{};window.devsite=a;a.readyCallbacks=[];window.devsite.readyCallbacks=a.readyCallbacks;a.ready=function(b){a.readyCallbacks.push(b)};window.devsite.ready=a.ready;
+</script><meta name="xsrf_token" content="-AkhpRcQLC2bOnBmqgqOfVGEw3OSiN3KO_5AdS1J2Go6MTUxOTkyOTcyNjQwNDc3MA"><link rel="canonical" href="https://cloud.google.com/speech/"><link rel="alternate" href="https://cloud.google.com/speech/?hl=fr" hreflang="fr"><link rel="alternate" href="https://cloud.google.com/speech/?hl=es" hreflang="es"><link rel="alternate" href="https://cloud.google.com/speech/?hl=es-419" hreflang="es-419"><link rel="alternate" href="https://cloud.google.com/speech/?hl=tr" hreflang="tr"><link rel="alternate" href="https://cloud.google.com/speech/?hl=zh-cn" hreflang="zh-Hans"><link rel="alternate" href="https://cloud.google.com/speech/?hl=it" hreflang="it"><link rel="alternate" href="https://cloud.google.com/speech/?hl=nl" hreflang="nl"><link rel="alternate" href="https://cloud.google.com/speech/?hl=ko" hreflang="ko"><link rel="alternate" href="https://cloud.google.com/speech/?hl=zh-tw" hreflang="zh-Hant"><link rel="alternate" href="https://cloud.google.com/speech/?hl=de" hreflang="de"><link rel="alternate" href="https://cloud.google.com/speech/?hl=pt-br" hreflang="pt-br"><link rel="alternate" href="https://cloud.google.com/speech/?hl=ja" hreflang="ja"><link rel="alternate" href="https://cloud.google.com/speech/" hreflang="en"><link rel="alternate" href="https://cloud.google.com/speech/" hreflang="x-default"><link rel="shortcut icon" href="https://cloud.google.com/_static/9abbcf9aa7/images/cloud/icons/favicons/favicon.ico"><link rel="apple-touch-icon" href="https://cloud.google.com/_static/9abbcf9aa7/images/cloud/icons/favicons/apple-icon.png"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="{{ url_for('static', filename='css') }}"><link rel="stylesheet" href="{{ url_for('static', filename='devsite-cloud-white.css') }}"><link rel="stylesheet" href="{{ url_for('static', filename='cloud-site.css') }}"><link rel="search" type="application/opensearchdescription+xml" title="Google Cloud Platform" href="https://cloud.google.com/s/opensearch.xml"><script src="./Speech API - Speech Recognition  _  Google Cloud Platform_files/jquery-bundle.js.download"></script><meta property="og:site_name" content="Google Cloud Platform"><meta property="og:type" content="website"><meta property="og:url" content="https://cloud.google.com/speech/"><meta property="og:locale" content="en"><script>
+    var ___gcfg = ___gcfg || {};
+    ___gcfg.lang = 'en';
+  </script><title>Speech API - Speech Recognition &nbsp;|&nbsp; Google Cloud Platform</title><meta property="og:title" content="Speech API - Speech Recognition  |  Google Cloud Platform"><meta name="description" content="Cloud Speech API provides fast and accurate speech recognition, converting audio, either from a microphone or from a file, to text in over 110 languages and variants."><meta property="og:description" content="Cloud Speech API provides fast and accurate speech recognition, converting audio, either from a microphone or from a file, to text in over 110 languages and variants."><link rel="stylesheet" href="{{ url_for('static', filename='product-logos.css') }}"><script src="../static/saved_resource"></script></head><body class="
+               devsite-doc-page
+               
+               devsite-full-width-page
+               
+               
+               devsite-header-no-lower-tabs" id="top_of_page"><script type="text/javascript" async="" src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/conversion_async.js.download"></script><script type="text/javascript" async="" src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/ga.js.download"></script><script type="text/javascript" async="" src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/analytics.js.download"></script><script async="" src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/gtm.js.download"></script><link rel="canonical" href="https://cloud.google.com/speech/"><link rel="alternate" href="https://cloud.google.com/speech/?hl=fr" hreflang="fr"><link rel="alternate" href="https://cloud.google.com/speech/?hl=es" hreflang="es"><link rel="alternate" href="https://cloud.google.com/speech/?hl=es-419" hreflang="es-419"><link rel="alternate" href="https://cloud.google.com/speech/?hl=tr" hreflang="tr"><link rel="alternate" href="https://cloud.google.com/speech/?hl=zh-cn" hreflang="zh-Hans"><link rel="alternate" href="https://cloud.google.com/speech/?hl=it" hreflang="it"><link rel="alternate" href="https://cloud.google.com/speech/?hl=nl" hreflang="nl"><link rel="alternate" href="https://cloud.google.com/speech/?hl=ko" hreflang="ko"><link rel="alternate" href="https://cloud.google.com/speech/?hl=zh-tw" hreflang="zh-Hant"><link rel="alternate" href="https://cloud.google.com/speech/?hl=de" hreflang="de"><link rel="alternate" href="https://cloud.google.com/speech/?hl=pt-br" hreflang="pt-br"><link rel="alternate" href="https://cloud.google.com/speech/?hl=ja" hreflang="ja"><link rel="alternate" href="https://cloud.google.com/speech/" hreflang="en"><link rel="alternate" href="https://cloud.google.com/speech/" hreflang="x-default"><link rel="shortcut icon" href="https://cloud.google.com/_static/9abbcf9aa7/images/cloud/icons/favicons/favicon.ico"><link rel="apple-touch-icon" href="https://cloud.google.com/_static/9abbcf9aa7/images/cloud/icons/favicons/apple-icon.png"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/static/css"><link rel="stylesheet" href="/static/devsite-cloud-white.css"><link rel="stylesheet" href="/static/cloud-site.css"><link rel="search" type="application/opensearchdescription+xml" title="Google Cloud Platform" href="https://cloud.google.com/s/opensearch.xml"><script src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/jquery-bundle.js.download"></script><meta property="og:site_name" content="Google Cloud Platform"><meta property="og:type" content="website"><meta property="og:url" content="https://cloud.google.com/speech/"><meta property="og:locale" content="en"><script>
+    var ___gcfg = ___gcfg || {};
+    ___gcfg.lang = 'en';
+  </script><title>Speech API - Speech Recognition &nbsp;|&nbsp; Google Cloud Platform</title><meta property="og:title" content="Speech API - Speech Recognition &nbsp;|&nbsp; Google Cloud Platform"><meta name="description" content="Cloud Speech API provides fast and accurate speech recognition, converting audio, either from a microphone or from a file, to text in over 110 languages and variants."><meta property="og:description" content="Cloud Speech API provides fast and accurate speech recognition, converting audio, either from a microphone or from a file, to text in over 110 languages and variants."><link rel="stylesheet" href="/static/product-logos.css"><script src="../static/saved_resource"></script><div class="devsite-wrapper" style="margin-top: 0px;"><div class="devsite-top-section-wrapper
+            "><header class="devsite-top-section nocontent devsite-top-section-pinned"><div class="devsite-top-logo-row-wrapper-wrapper" style="position: relative;"><div class="devsite-top-logo-row-wrapper"><div class="devsite-top-logo-row devsite-full-site-width"><button type="button" class="devsite-expand-section-nav devsite-header-icon-button
+                                       button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Hamburger menu"></button><div class="devsite-product-name-wrapper"><a href="https://cloud.google.com/" class="devsite-site-logo-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Site logo"><img src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/gcp-logo.svg" class="devsite-site-logo" alt="Google Cloud Platform"><span class="devsite-site-name devsite-product-name">Google Cloud Platform</span></a></div><div class="devsite-header-upper-tabs"><nav class="devsite-doc-set-nav devsite-nav devsite-overflow-tabs-scroll-wrapper"><ul class="devsite-doc-set-nav-tab-list devsite-overflow-tabs-scroll" style="min-width: 988px; left: 0px;"><li class="devsite-doc-set-nav-tab-container"><a href="https://cloud.google.com/" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Home" track-type="globalNav" track-name="home">
+        Home
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://cloud.google.com/about/locations/" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: About" track-type="globalNav" track-name="about">
+        About
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://cloud.google.com/why-google/" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Why Google" track-type="globalNav" track-name="whyGoogle">
+        Why Google
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://cloud.google.com/products/" class="devsite-doc-set-nav-active
+                devsite-doc-set-nav-tab gc-analytics-event" aria-label="Products, selected" data-category="Site-Wide Custom Events" data-label="Tab: Products" track-type="globalNav" track-name="products">
+        Products
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://cloud.google.com/solutions/" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Solutions" track-type="globalNav" track-name="solutions">
+        Solutions
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://cloud.google.com/launcher/" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Launcher" track-type="globalNav" track-name="launcher">
+        Launcher
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://cloud.google.com/pricing/" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Pricing" track-type="globalNav" track-name="pricing">
+        Pricing
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://cloud.google.com/customers/" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Customers" track-type="globalNav" track-name="customers">
+        Customers
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://cloud.google.com/docs/" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Documentation" track-type="globalNav" track-name="documentation">
+        Documentation
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://cloud.google.com/support/" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Support" track-type="globalNav" track-name="support">
+        Support
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://cloud.google.com/partners/" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Partners" track-type="globalNav" track-name="partners">
+        Partners
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://cloud.google.com/blog/big-data/" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Social" track-type="globalNav" track-name="social">
+        Social
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://cloud.google.com/contact/" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Contact" track-type="globalNav" track-name="contact">
+        Contact
+      </a></li></ul><button type="button" class="devsite-overflow-tabs-scroll-button devsite-top-button material-icons devsite-scroll-forward devsite-hidden"></button><button type="button" class="devsite-overflow-tabs-scroll-button devsite-top-button material-icons devsite-scroll-back devsite-hidden"></button></nav></div><form class="devsite-search-form" action="https://cloud.google.com/s/results/" method="GET" id="top-search" search-placeholder="Search"><div id="searchbox" class="devsite-searchbox"><input placeholder="Search" type="text" class="devsite-search-field devsite-search-query" name="q" value="" autocomplete="off" aria-label="Search box"><div class="devsite-search-image material-icons"></div></div><input type="hidden" name="p" id="search_project" value="/" data-project-name="Google Cloud Platform" data-project-path="/" data-query-match=""><input type="hidden" class="suggest-project" value="Google Cloud Platform"><div class="suggest-project-metadata" data-home_url="/" data-path="/" data-name="Android Developers"></div><div class="suggest-project-metadata" data-home_url="/" data-path="/" data-name="Android Open Source Project"></div><div class="suggest-project-metadata" data-home_url="/" data-path="/" data-name="Google Cloud Platform"></div><div class="suggest-project-metadata" data-home_url="/" data-path="/" data-name="Dialogflow"></div><div class="suggest-project-metadata" data-home_url="/" data-path="/" data-name="Firebase"></div><div class="suggest-project-metadata" data-home_url="/" data-path="/" data-name="Link.app"></div><div class="suggest-project-metadata" data-home_url="/" data-path="/" data-name="Nest Developers"></div><div class="suggest-project-metadata" data-home_url="/" data-path="/" data-name="OpenThread"></div><div class="suggest-project-metadata" data-home_url="/" data-path="/" data-name="TensorFlow"></div><div class="devsite-popout devsite-popout-closed"><div class="devsite-suggest-results" style="display: none;"></div><div class="devsite-history-container"><div class="devsite-history-wrapper"><div class="devsite-history-side-column"><div class="devsite-history-icon material-icons"></div></div><div class="devsite-history-main-column">Sign in to see the pages you visit often.<div class="devsite-history-footer"><a href="https://myaccount.google.com/privacy#accounthistory" class="devsite-history-preferences-link button button-white">History Preferences</a></div></div></div></div></div></form><a class="devsite-header-link devsite-top-button button gc-analytics-event" href="https://console.cloud.google.com/" data-category="Site-Wide Custom Events" data-label="Site header link" track-type="navigateTo" track-name="console" track-metadata-position="nav"><div class="devsite-header-link-label">Console</div></a><button type="button" class="devsite-search-button devsite-header-icon-button button-flat
+                                       material-icons"></button><a href="https://www.google.com/accounts/ServiceLogin?passive=true&amp;continue=https%3A%2F%2Fcloud.google.com%2Fspeech%2F%3Frefresh%3D1&amp;service=cloudconsole" class="devsite-user-signin devsite-top-button button gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Sign in button">
+  
+  Sign in
+</a></div></div></div><div class="devsite-collapsible-section" style="margin-top: 0px;"><div class="devsite-header-background devsite-full-site-width"><div class="devsite-product-id-row devsite-full-site-width" style="visibility: hidden;"><div class="devsite-product-description-row"><ul class="devsite-breadcrumb-list"><li class="devsite-breadcrumb-item">
+    
+    
+    
+      Products
+    
+    
+  </li></ul></div><div class="devsite-product-button-row
+            cloud-free-trial-eligible"><a href="https://console.cloud.google.com/freetrial" class="cloud-free-trial-button button-primary button" track-type="freeTrial" track-name="try" track-metadata-position="nav">
+    Try It Free
+  </a><a href="https://cloud.google.com/contact/" class="cloud-contact-sales-button button" track-type="sales" track-name="contact" track-metadata-position="nav">
+    Contact Sales
+  </a></div></div></div></div></header><script>
+    if (window.jQuery) {
+      $(document).ready(function() {
+        if (window.devsite && window.devsite.search) {
+          
+          window.devsite.search.init('en')
+        }
+      });
+    }
+  </script></div><div id="gc-wrapper" itemscope="" itemtype="http://schema.org/Article"><input class="google-tag-manager-id" type="hidden" value="GTM-5CVQBG"><script>
+      var dataLayer = [{"freeTrialEligibleUser": "True", "userCountry": "US", "language": {"requested": "en", "served": "en"}, "projectName": "Google Cloud Platform", "scriptsafe": null, "signedIn": "False", "internalUser": "False"}];
+    </script>
+
+      
+        <div class="devsite-site-mask"></div>
+        
+  
+
+<nav class="devsite-nav-responsive devsite-nav nocontent" tabindex="0" style="left: -252px;">
+  
+  <div class="devsite-nav-responsive-tabs-panel devsite-nav-responsive-transition devsite-nav-responsive-transform" style="display: none;">
+    
+      
+        
+
+
+
+<nav class="devsite-nav-responsive-tabs devsite-nav">
+  <ul class="devsite-nav-list">
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+    
+      <a href="https://cloud.google.com/" class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Home"><span>
+        Home
+      </span></a>
+      
+    
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+    
+      <a href="https://cloud.google.com/about/locations/?nav=true" class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                " data-category="Site-Wide Custom Events" data-label="Responsive Tab: About"><span>
+        About
+      </span></a>
+      
+    
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+    
+      <a href="https://cloud.google.com/why-google/?nav=true" class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Why Google"><span>
+        Why Google
+      </span></a>
+      
+    
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+    
+      <span class="devsite-nav-responsive-forward devsite-nav-responsive-tab devsite-nav-title
+                   devsite-nav-active gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Responsive Tab: Products" tabindex="0"><span>
+        Products
+      </span></span>
+    
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+    
+      <a href="https://cloud.google.com/solutions/?nav=true" class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Solutions"><span>
+        Solutions
+      </span></a>
+      
+    
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+    
+      <a href="https://cloud.google.com/launcher/?nav=true" class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Launcher"><span>
+        Launcher
+      </span></a>
+      
+    
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+    
+      <a href="https://cloud.google.com/pricing/?nav=true" class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Pricing"><span>
+        Pricing
+      </span></a>
+      
+    
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+    
+      <a href="https://cloud.google.com/customers/?nav=true" class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Customers"><span>
+        Customers
+      </span></a>
+      
+    
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+    
+      <a href="https://cloud.google.com/docs/?nav=true" class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Documentation"><span>
+        Documentation
+      </span></a>
+      
+    
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+    
+      <a href="https://cloud.google.com/support/?nav=true" class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Support"><span>
+        Support
+      </span></a>
+      
+    
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+    
+      <a href="https://cloud.google.com/partners/?nav=true" class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Partners"><span>
+        Partners
+      </span></a>
+      
+    
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+    
+      <a href="https://cloud.google.com/blog/big-data/?nav=true" class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Social"><span>
+        Social
+      </span></a>
+      
+    
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+    
+      <a href="https://cloud.google.com/contact/?nav=true" class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Contact"><span>
+        Contact
+      </span></a>
+      
+    
+    </li>
+  
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      <a href="https://console.cloud.google.com/" class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Responsive Tab: console"><span>
+        Console
+      </span></a>
+    </li>
+  
+  </ul>
+</nav>
+
+      
+    
+  </div>
+  
+  
+  <div class="devsite-nav-responsive-sidebar-panel" style="display: block;">
+    
+    <div class="devsite-nav-responsive-back" tabindex="0"></div>
+    
+    <nav class="devsite-nav-responsive-sidebar">
+      <ul class="devsite-nav-list devsite-nav-expandable"><li class="devsite-nav-item devsite-nav-item-heading"><span class="devsite-nav-title devsite-nav-title-no-path" track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Products</span></span></li><li class="devsite-nav-item"><a href="https://cloud.google.com/products/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Overview</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/products/compute/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Compute Products</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/products/machine-learning/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Machine Learning</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/products/networking/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Networking</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/products/big-data/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Big Data</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/products/storage/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Storage</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/products/management/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Management Tools</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/products/tools/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Developer Tools</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><span class="devsite-nav-title devsite-nav-title-no-path" track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Compute</span></span></li><li class="devsite-nav-item"><a href="https://cloud.google.com/compute/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Compute Engine</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/custom-machine-types/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Custom Machine Types</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/preemptible-vms/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Preemptible VMs</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/appengine/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>App Engine</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/kubernetes-engine/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Kubernetes Engine</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/container-registry/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Container Registry</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/functions/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Functions</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><span class="devsite-nav-title devsite-nav-title-no-path" track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Storage and Databases</span></span></li><li class="devsite-nav-item devsite-nav-item-section-expandable"><span class="devsite-nav-title devsite-nav-title-no-path" track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0" aria-label="Cloud Storage, click to expand/collapse" role="link" tabindex="0"><span>Cloud Storage</span></span><a class="devsite-nav-toggle devsite-nav-toggle-collapsed material-icons" track-type="leftNav" track-name="expandNavSectionArrow" track-metadata-position="0" aria-hidden="true"></a><ul class="devsite-nav-section devsite-nav-section-collapsed"><li class="devsite-nav-item"><a href="https://cloud.google.com/storage/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Overview</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/storage/use-cases/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Use Cases</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/storage/features/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Features</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/storage/pricing-summary/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Pricing</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/storage/migrate/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Migrate</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/storage/getting-started/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Getting Started</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/storage/partners/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Partners</span></a></li></ul></li><li class="devsite-nav-item"><a href="https://cloud.google.com/storage-nearline/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Storage Nearline</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/bigtable/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Bigtable</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/datastore/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Datastore</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/sql/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud SQL</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/spanner/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Spanner</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/sql-server/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>SQL Server</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/persistent-disk/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Persistent Disk</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><span class="devsite-nav-title devsite-nav-title-no-path" track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Networking</span></span></li><li class="devsite-nav-item"><a href="https://cloud.google.com/virtual-network/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Virtual Network</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/load-balancing/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Load Balancing</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/cdn/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud CDN</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/interconnect/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Interconnect</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/dns/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud DNS</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><span class="devsite-nav-title devsite-nav-title-no-path" track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Big Data</span></span></li><li class="devsite-nav-item"><a href="https://cloud.google.com/bigquery/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>BigQuery</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/dataflow/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Dataflow</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/dataproc/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Dataproc</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/dataprep/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Dataprep</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/datalab/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Datalab</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/data-studio/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Data Studio</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/pubsub/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Pub/Sub</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/genomics/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Genomics</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/commercial-datasets/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Commercial Datasets on GCP</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><span class="devsite-nav-title devsite-nav-title-no-path" track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Cloud AI</span></span></li><li class="devsite-nav-item"><a href="https://cloud.google.com/automl/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud AutoML &lt;sup&gt;Alpha&lt;/sup&gt;</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/tpu/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud TPU &lt;sup&gt;Beta&lt;/sup&gt;</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/ml-engine/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Machine Learning Engine</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/vision/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Vision API</span></a></li><li class="devsite-nav-item devsite-nav-active"><a href="https://cloud.google.com/speech/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Speech API</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/translate/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Translation API</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/prediction/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Prediction API</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/natural-language/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Natural Language API</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/jobs-api/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Jobs API</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/video-intelligence/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Video Intelligence</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><span class="devsite-nav-title devsite-nav-title-no-path" track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Management Tools</span></span></li><li class="devsite-nav-item"><a href="https://cloud.google.com/stackdriver/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Stackdriver</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/monitoring/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Monitoring</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/logging/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Logging</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/error-reporting/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Error Reporting</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/trace/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Trace</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/debugger/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Debugger</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/deployment-manager/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Deployment Manager</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/cloud-console/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Console</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/shell/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Shell</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/console-app/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Mobile App</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/apis/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud APIs</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><span class="devsite-nav-title devsite-nav-title-no-path" track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Developer Tools</span></span></li><li class="devsite-nav-item"><a href="https://cloud.google.com/sdk/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud SDK</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/container-builder/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Container Builder</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/deployment-manager/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Deployment Manager</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/source-repositories/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Source Repositories</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/endpoints/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Endpoints</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/android-studio/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Tools for Android Studio</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/intellij/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Tools for IntelliJ</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/powershell/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Tools for PowerShell</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/visual-studio/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Tools for Visual Studio</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/eclipse/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Tools for Eclipse</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/windows/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Windows on Google Cloud Platform</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/dotnet/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>.<wbr>NET on Google Cloud Platform</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><span class="devsite-nav-title devsite-nav-title-no-path" track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Identity &amp; Security</span></span></li><li class="devsite-nav-item"><a href="https://cloud.google.com/iam/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud IAM</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/resource-manager/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Resource Manager</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/security-scanner/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Security Scanner</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/security-key/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Security Key Enforcement</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/kms/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Key Management Service</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/iap/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Cloud Identity-Aware Proxy</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/dlp/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Data Loss Preventation API</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/istio/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Istio with Google</span></a></li><li class="devsite-nav-item"><a href="https://cloud.google.com/dialogflow-enterprise/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Dialogflow Enterprise Edition</span></a></li></ul>
+    </nav>
+  </div>
+  
+</nav>
+
+
+        <div class="devsite-main-content clearfix" style="margin-top: 232px;">
+
+        
+        
+
+        
+  
+  
+          
+  
+
+
+
+  
+  <nav class="devsite-breadcrumb-nav devsite-nav">
+    
+
+
+<ul class="devsite-breadcrumb-list">
+  
+  <li class="devsite-breadcrumb-item">
+    
+    
+    <a href="https://cloud.google.com/" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="1">
+    
+    
+      Google Cloud Platform
+    
+    
+    </a>
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item">
+    
+    
+    <div class="devsite-breadcrumb-guillemet material-icons"></div>
+    
+    
+    <a href="https://cloud.google.com/products/" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="2">
+    
+    
+      Products
+    
+    
+    </a>
+    
+  </li>
+  
+</ul>
+
+  </nav>
+  
+  
+  
+  <div class="devsite-article-body clearfix
+            
+              devsite-no-page-title
+            " itemprop="articleBody">
+    
+    <article class="l-fixed-width" id="cloud-site">
+      <header class="hero l-clearfix product-hero">
+        <div class="l-space-top-3 l-space-bottom-2 l-max-width-standard">
+          <h1 class="hero-title text-display-1">
+            Cloud Speech API
+          </h1>
+          <h2 class="hero-subtitle text-subhead" id="speech-to-text-conversion-powered-by-machine-learning">
+            Speech to text conversion powered by machine learning
+          </h2>
+            
+              <a href="https://console.cloud.google.com/freetrial" class="button button-large speech-button" track-type="freeTrial" track-name="try" track-metadata-position="banner">
+                Try It Free
+              </a>
+            
+        </div>
+        <div id="hero-gear"></div>
+      </header>
+      <section class="background-grey l-content text-platinum full-bleed-section">
+        <div class="l-showcase is-large is-split-left l-space-bottom-10">
+          <div class="l-showcase-content l-pad-right-40">
+            <h2 class="text-display-1 l-pad-top-1" id="powerful-speech-recognition">
+              Powerful Speech Recognition
+            </h2>
+            <p class="text-body">
+              Google Cloud Speech API enables developers to <strong>convert audio to text</strong>
+              by applying <strong>powerful neural network models</strong> in an easy to use API.
+              The API <strong>recognizes over 110 languages and variants,</strong> to support your
+              global user base. You can transcribe the text of users dictating to an application’s
+              microphone, enable command-and-control through voice, or transcribe audio files,
+              among many other use cases. <strong>Recognize audio uploaded in the request,</strong>
+              and integrate with your audio storage on Google Cloud Storage, by using the same
+              technology Google uses to power its own products.
+            </p>
+          </div>
+          <figure class="l-showcase-image l-pad-top-2">
+            <img alt="speech-api-lead" src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/speech-api-lead.png" srcset="/images/products/speech/speech-api-lead_2x.png 2x">
+          </figure>
+        </div>
+        <div class="l-showcase">
+          <!-- DEMO -->
+          <div id="streaming_demo_section" data-embed="sp-app" data-url="https://www.gstatic.com/cloud-site-ux/speech.min.html"><iframe frameborder="0" scrolling="no" height="150px" style="width: 1px; min-width: 100%; height: 381px;" src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/saved_resource.html"></iframe></div>
+        </div>
+        <div class="l-showcase is-split-right l-space-bottom-12">
+          <div class="l-showcase-content l-pad-left-32">
+            <h2 class="text-headline l-pad-top-1" id="powered-by-machine-learning">
+              Powered by Machine Learning
+            </h2>
+            <p class="text-body">
+              Apply the most advanced deep learning neural network algorithms to your user's audio
+              for speech recognition with unparalleled accuracy. Speech API
+              <strong>accuracy improves over time</strong> as Google improves the internal speech
+              recognition technology used by Google products.
+            </p>
+          </div>
+          <figure class="l-showcase-image">
+            <img alt="" src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/machine-learning.png" srcset="/images/products/speech/machine-learning-2x.png 2x">
+          </figure>
+        </div>
+        <div class="l-showcase is-split-left l-space-bottom-12">
+          <div class="l-showcase-content l-pad-right-26 l-pad-top-4">
+            <h2 class="text-headline l-pad-top-1" id="over-110-languages">
+              Over 110 Languages
+            </h2>
+            <p class="text-body">
+              Speech API <strong>recognizes</strong> over 110 languages and variants to support your
+              global user base. You can also <strong>filter inappropriate content</strong> in text
+              results.
+            </p>
+          </div>
+          <figure class="l-showcase-image">
+            <img alt="" src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/many-languages.png" srcset="/images/products/speech/many-languages-2x.png 2x">
+          </figure>
+        </div>
+        <div class="l-showcase is-split-right l-space-bottom-12">
+          <div class="l-showcase-content l-pad-left-26">
+            <h2 class="text-headline l-pad-top-4" id="return-text-results-in-real-time">
+              Return Text Results in Real-Time
+            </h2>
+            <p class="text-body">
+              Speech API can <strong>stream text results</strong>, returning partial recognition
+              results as they become available, with the recognized text appearing immediately
+              while speaking. Alternatively, Speech API can return recognized text from audio
+              stored in a file.
+            </p>
+          </div>
+          <figure class="l-showcase-image l-pad-top-2">
+            <img alt="" src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/clock.png" srcset="/images/products/speech/clock-2x.png 2x">
+          </figure>
+        </div>
+        <div class="l-showcase is-split-left l-space-bottom-15">
+          <div class="l-showcase-content l-pad-right-28 l-pad-top-5">
+            <h2 class="text-headline" id="accurate-in-noisy-environments">
+              Accurate in Noisy Environments
+            </h2>
+            <p class="text-body">
+              You don’t need advanced signal processing or noise cancellation before sending audio
+              to Speech API. The service can successfully <strong>handle noisy audio</strong> from
+              a variety of environments.
+            </p>
+          </div>
+          <figure class="l-showcase-image">
+            <img alt="" src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/noise.png">
+          </figure>
+        </div>
+        <div class="l-showcase is-split-right l-space-bottom-14">
+          <div class="l-showcase-content l-pad-left-36 l-pad-top-1">
+            <h2 class="text-headline" id="context-aware-recognition">
+              Context-Aware Recognition
+            </h2>
+            <p class="text-body">
+              Speech recognition can be tailored to context by providing a separate set of word
+              hints with each API call. Useful especially for device/app control use cases.
+            </p>
+          </div>
+          <figure class="l-showcase-image">
+            <img alt="" src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/context-aware.png" srcset="/images/products/speech/context-aware-2x.png 2x">
+          </figure>
+        </div>
+        <div class="l-showcase is-split-left l-space-bottom-12">
+          <div class="l-showcase-content l-pad-right-34 l-pad-top-1">
+            <h2 class="text-headline" id="works-with-apps-across-any-device">
+              Works With Apps Across Any Device
+            </h2>
+            <p class="text-body">
+              Speech API supports any device that can send a REST or gRPC request including phones,
+              PCs, tablets and IoT devices (e.g., cars, TVs, speakers)
+            </p>
+          </div>
+          <figure class="l-showcase-image">
+            <img alt="" src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/across-any-device.png" srcset="/images/products/speech/across-any-device-2x.png 2x">
+          </figure>
+        </div>
+      </section>
+      <section id="websites" class="background-mist text-platinum grid-fluid l-content full-bleed-section">
+        <span class="sticker l-divider">
+        <img src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/speech-api-symbol.png" class="sticker-top is-small">
+        <span class="sticker-bottom is-circle"></span>
+        </span>
+        <div class="grid-fluid l-max-width-standard l-clearfix">
+          <header class="c12 text-header">
+            <h1 class="text-display-1 l-space-bottom-0">
+              Speech API Features
+            </h1>
+            <h2 class="text-title" id="speech-to-text-conversion-powered-by-machine-learning_1">
+              Speech to text conversion powered by machine learning
+            </h2>
+          </header>
+          <dl class="c5 a1">
+            <dt>
+              Automatic Speech Recognition
+            </dt>
+            <dd>
+              Automatic Speech Recognition (ASR) powered by deep learning neural networking to
+              power your applications like voice search or speech transcription.
+            </dd>
+            <dt>
+              Global Vocabulary
+            </dt>
+            <dd>
+              Recognizes over 110 languages and variants with an extensive vocabulary.
+            </dd>
+            <dt>
+              Streaming Recognition
+            </dt>
+            <dd>
+              Returns recognition results while the user is still speaking.
+            </dd>
+            <dt>
+              Word Hints
+            </dt>
+            <dd>
+              Speech recognition can be customized to a specific context by providing a set of
+              words and phrases that are likely to be spoken. Especially useful for adding custom
+              words and names to the vocabulary and in voice-control use cases.
+            </dd>
+          </dl>
+          <dl class="c5">
+            <dt>
+              Real-time or Pre-recorded Audio Support
+            </dt>
+            <dd>
+              Audio input can be captured by an application’s microphone or sent from a
+              pre-recorded audio file. Multiple audio encodings are supported, including FLAC, AMR,
+              PCMU and Linear-16.
+            </dd>
+            <dt>
+              Noise Robustness
+            </dt>
+            <dd>
+              Handles noisy audio from many environments without requiring additional noise
+              cancellation.
+            </dd>
+            <dt>
+              Inappropriate Content Filtering
+            </dt>
+            <dd>
+              Filter inappropriate content in text results for some languages.
+            </dd>
+            <dt>
+              Integrated API
+            </dt>
+            <dd>
+              Audio files can be uploaded in the request or integrated with
+              <a href="https://cloud.google.com/storage/">Google Cloud Storage</a>.
+            </dd>
+          </dl>
+        </div>
+      </section>
+      <section class="text-platinum grid-fluid l-content full-bleed-section">
+        <div class="l-max-width-standard">
+          <header class="text-header">
+            <h3 class="text-display-1" id="cloud-speech-api-pricing">CLOUD SPEECH API PRICING</h3>
+            <h4 class="text-body">
+              Powerful Speech Recognition
+            </h4>
+            <p>
+              Cloud Speech API is priced per 15 seconds of audio processed after a 60 minute free
+              tier. For details, please see our <a href="https://cloud.google.com/speech/pricing/">pricing guide.</a>
+            </p>
+          </header>
+          <div class="devsite-table-wrapper"><table>
+            <thead>
+              <tr>
+                <th>Monthly Usage</th>
+                <th>Price Per 15 seconds*</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>0 - 60 minutes</th>
+                <td>Free</td>
+              </tr>
+              <tr>
+                <th>61 - 1,000,000 minutes**</th>
+                <td>$0.006</td>
+              </tr>
+            </tbody>
+          </table></div>
+          <small>
+If you pay in a currency other than USD, the prices listed in your currency on
+<a href="https://cloud.google.com/skus/">Cloud Platform SKUs</a> apply.
+</small>
+          <p>
+            <small>
+              <sup>*</sup> This pricing is for applications on personal systems (e.g., phones,
+              tablets, laptops, desktops). Please
+              <a href="https://services.google.com/fb/forms/speech-api-pricing-request/">
+                contact us
+              </a> for approval and pricing to use Speech API on embedded devices
+              (e.g., cars, TVs, appliances, or speakers).
+            </small>
+          </p>
+          <p>
+            <small>
+              <sup>**</sup> Monthly usage is capped at 1 million minutes per month
+            </small>
+          </p>
+        </div>
+
+        <div class="cta-bar l-space-bottom-4 l-clearfix l-pad-top-6">
+            
+              <a href="https://console.cloud.google.com/freetrial" class="button button-large button-cloud" track-type="freeTrial" track-name="try" track-metadata-position="bottom">
+                Try It Free
+              </a>
+            
+        </div>
+      </section>
+    </article>
+    <script src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/embed.min.js.download"></script>
+  
+  </div>
+  
+    
+
+
+
+  
+
+  
+
+        </div>
+      
+
+</div><script async="" defer="" src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/api.js.download"></script><script src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/saved_resource(1)"></script><script src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/script_foot_closure.js.download"></script><script src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/script_foot.js.download"></script><script>
+        (function($) {
+          
+          devsite.devsite.Init($, {'FULL_SITE_SEARCH_ENABLED': 1, 'ENABLE_BLOCKED_VIDEO_PLACEHOLDER': 0, 'VERSION_HASH': '9abbcf9aa7', 'SITE_NAME': 'cloud', 'HISTORY_ENABLED': 1, 'ENABLE_BLOCKED_LINK_TOOLTIP': 0, 'ALLOWED_HOSTS': ['.android.com', '.anvato.com', '.apigee.com', '.appspot.com', '.dialogflow.com', '.gonglchuangl.net', '.google.cn', '.google.com', '.googleplex.com', '.nest.com', '.openthread.io', '.openweave.io', '.orbitera.com', '.tensorflow.org'], 'BLOCK_RSS_FEEDS': 0, 'SCRIPTSAFE_DOMAIN': 'cloud-dot-google-developers.appspot.com', 'VTAGS_ENABLED': 1},
+                               '[]','en',
+                               true, '',
+                               {"f62218c009ec029abef196bba5aa34cf": true, "8de7a048f21618359bd37f5ce44be073": false, "098dafe57affddc137df300142652cfd": false, "8e03e230de0bd8a6fe173fdf172e8b3f": true, "cb025a64a50094835616312f4774a53d": true, "51470233c56fc1fde50f00b73c52b216": false, "d169d485cf24243a263783dbe42029b1": true, "039e5d84b87fd75807ffb37b7f1bbf2c": true, "752953480de00a336d911a46966cc16d": false, "700def1a83e356c06c0925afb05de4b0": false, "6749dcb526ce9bde6993550c7d928d24": true}, '/',
+                               'https://cloud.google.com/');
+        })(jQuery);
+
+        
+        devsite.localInit = function() {
+          
+        };
+
+      </script><script>
+      $('.devsite-utility-footer-language-select').each(function() {
+        $(this).change(function(){$('.devsite-utility-footer-language').submit();});
+      });
+      </script></div><span id="devsite-request-elapsed" data-request-elapsed="438.25006485"></span>
+<ul class="kd-menulist devsite-hidden" style="left: 24px; right: auto; top: 4662.33px;"><li class="kd-menulistitem" value="de" track-type="languageSelector" track-name="changed" track-metadata-original-language="en" track-metadata-selected-language="de">
+            Deutsch
+          </li><li class="kd-menulistitem devsite-selected-option" value="en" track-type="languageSelector" track-name="changed" track-metadata-original-language="en" track-metadata-selected-language="en">
+            English
+          </li><li class="kd-menulistitem" value="es" track-type="languageSelector" track-name="changed" track-metadata-original-language="en" track-metadata-selected-language="es">
+            español
+          </li><li class="kd-menulistitem" value="es-419" track-type="languageSelector" track-name="changed" track-metadata-original-language="en" track-metadata-selected-language="es-419">
+            Español (América Latina)
+          </li><li class="kd-menulistitem" value="fr" track-type="languageSelector" track-name="changed" track-metadata-original-language="en" track-metadata-selected-language="fr">
+            français
+          </li><li class="kd-menulistitem" value="it" track-type="languageSelector" track-name="changed" track-metadata-original-language="en" track-metadata-selected-language="it">
+            italiano
+          </li><li class="kd-menulistitem" value="nl" track-type="languageSelector" track-name="changed" track-metadata-original-language="en" track-metadata-selected-language="nl">
+            Nederlands
+          </li><li class="kd-menulistitem" value="pt-br" track-type="languageSelector" track-name="changed" track-metadata-original-language="en" track-metadata-selected-language="pt-br">
+            Português Brasileiro
+          </li><li class="kd-menulistitem" value="tr" track-type="languageSelector" track-name="changed" track-metadata-original-language="en" track-metadata-selected-language="tr">
+            Türkçe
+          </li><li class="kd-menulistitem" value="ja" track-type="languageSelector" track-name="changed" track-metadata-original-language="en" track-metadata-selected-language="ja">
+            日本語
+          </li><li class="kd-menulistitem" value="zh-cn" track-type="languageSelector" track-name="changed" track-metadata-original-language="en" track-metadata-selected-language="zh-cn">
+            简体中文
+          </li><li class="kd-menulistitem" value="zh-tw" track-type="languageSelector" track-name="changed" track-metadata-original-language="en" track-metadata-selected-language="zh-tw">
+            繁體中文
+          </li><li class="kd-menulistitem" value="ko" track-type="languageSelector" track-name="changed" track-metadata-original-language="en" track-metadata-selected-language="ko">
+            한국어
+          </li></ul><iframe src="./Speech API - Speech Recognition &nbsp;_&nbsp; Google Cloud Platform_files/pixel.html" style="display: none;"></iframe></body>
+          </html>

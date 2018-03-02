@@ -29,10 +29,17 @@ def testAccuracy(net,acc,testIter):
 
 trainRatio = 0.75
 testRatio = 0.25
+spectrumData = np.zeros((0,2))
+print('loading data')
+for i in range(3):
+    print(i)
+    spectrumData = np.concatenate((spectrumData,np.load('IEMOCAP_STFT_IMAGE'+str(i)+'.npy')),axis = 0)
+print('finish')
 
-spectrumData = np.load('cut_img_list.npy')
+
 dataNum = spectrumData.shape[0]
 trainNum = int(dataNum*trainRatio)
+print(spectrumData.shape)
 testNum = dataNum-trainNum
 
 trainData = nd.array(spectrumData[:trainNum,0].tolist()).reshape((trainNum,1,256,256))

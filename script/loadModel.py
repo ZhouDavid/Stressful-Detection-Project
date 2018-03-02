@@ -22,10 +22,14 @@ def playWav(filename):
 	player.queue(song)
 	player.play()
 
-emotionDict=['netural','calm','happy','sad','angry','fearful','disgust','surprised']
+# emotionDict=['netural','calm','happy','sad','angry','fearful','disgust','surprised']
+emotions = ['Neutral', 'Frustration', 'Other', 'Disgust', 'Surprise', 'Excited', 'Anger', 'Fear', 'Sadness', 'Happiness', 'Overlap']
+
+# define the model
 alexnet = vision.AlexNet(classes=8)
-alexnet.load_params('model_param',ctx=mx.gpu())
-testDataDirectory = './test data/'
+# model set up
+alexnet.load_params('../model settings/model_param',ctx=mx.gpu())
+testDataDirectory = '../data/sample test data/'
 waveFiles = [(f,join(testDataDirectory,f)) for f in listdir(testDataDirectory)]
 for file in waveFiles: 
 	sample_rate,wav_data = wav.read(file[1])
@@ -38,7 +42,7 @@ for file in waveFiles:
 	abs_stft_img = nd.array(abs_stft_img[:256,:256]).reshape((1,1,256,256))
 	predict = alexnet(abs_stft_img.as_in_context(mx.gpu()))
 	predict = nd.softmax(predict)
-	emotion = emotionDict[int(nd.argmax(predict,axis=1).asscalar())]
+	emotion = emotions[int(nd.argmax(predict,axis=1).asscalar())]
 	print('classification result:{}'.format(emotion))
 	print()
 
