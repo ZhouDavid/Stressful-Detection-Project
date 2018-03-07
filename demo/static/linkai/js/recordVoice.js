@@ -87,7 +87,7 @@ var handleSuccess = function(stream) {
     }
   }
 
-
+  //recorder相关设置
   mediaRecorder.addEventListener('dataavailable', function(e) {
     if (e.data.size > 0) {
       recordedChunks.push(e.data);
