@@ -24,6 +24,7 @@ def isWavFile(filename):
 
 
 def getFileFullNames(root):
+    # give a directory and return all file's absolute paths
     return [join(root, name) for name in listdir(root) if isWavFile(name)]
 
 def amplifyImg(img, height, width):
@@ -37,6 +38,7 @@ def shrinkImg(img, height, width):
 
 
 def findAllFilePaths(root,suffix='.wav'):
+    # give a directory and return all file's absolute paths ending with {suffix}
     wavFilePaths = list()
     queue = list()
     queue.append(root)

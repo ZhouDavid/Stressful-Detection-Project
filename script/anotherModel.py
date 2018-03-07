@@ -30,10 +30,11 @@ def testAccuracy(net,acc,testIter):
 trainRatio = 0.75
 testRatio = 0.25
 spectrumData = np.zeros((0,2))
+root = 'D:\\David Zhou\\Stressful Detection Project\\data\\preprocessed data\\IEMOCAP\\'
 print('loading data')
-for i in range(3):
+for i in range(1):
     print(i)
-    spectrumData = np.concatenate((spectrumData,np.load('IEMOCAP_STFT_IMAGE'+str(i)+'.npy')),axis = 0)
+    spectrumData = np.concatenate((spectrumData,np.load(root+'IEMOCAP_STFT_IMAGE'+str(i)+'.npy')),axis = 0)
 print('finish')
 
 
@@ -50,7 +51,7 @@ testLabels = nd.array(transform(spectrumData[trainNum:,1].tolist()))
 model_ctx = mx.gpu()
 alexnet.collect_params().initialize(mx.init.Xavier(magnitude=2.24), ctx=model_ctx)
 softmax_cross_entropy = gluon.loss.SoftmaxCrossEntropyLoss()
-trainer = gluon.Trainer(alexnet.collect_params(), 'sgd', {'learning_rate': .001,'wd':1e-5,'momentum':0.9})
+trainer = gluon.Trainer(alexnet.collect_params(), 'sgd', {'learning_rate': .1,'wd':1e-5,'momentum':0.9})
 
 trainIter = NDArrayIter(data=trainData,label=trainLabels,batch_size=64,shuffle=True)
 testIter = NDArrayIter(data=testData,label = testLabels,batch_size=64,shuffle=True)
