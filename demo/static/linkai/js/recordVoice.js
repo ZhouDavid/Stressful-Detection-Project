@@ -48,7 +48,7 @@ var clickTimes = 0
 let shouldStop = true
 let stopped = true
 mediaRecorder = null
-var bottomVolumn = 0.3
+var bottomVolumn = 0.05
 var recording = false
 var liveSource = null
 var levelChecker = null
@@ -58,11 +58,12 @@ var handleSuccess = function(stream) {
   const options = {mimeType: 'video/webm;codecs=vp9'};
   recordedChunks = [];
   mediaRecorder = new MediaRecorder(stream, options);
-  var audioContext = window.AudioContext || window.webkitAudioContext;
+  var audioContext = window.AudioContext || window.webkitAudioContext; //这是一个类
   var context = new audioContext(); //创建一个管理、播放声音的对象
+
   liveSource = context.createMediaStreamSource(stream); //将麦克风的声音输入这个对象
   levelChecker = context.createScriptProcessor(4096,1,1); //创建一个音频分析对象，采样的缓冲区大小为4096，输入和输出都是单声道
-  levelChecker.connect(context.destination)
+  levelChecker.connect(context.destination) 
 
   levelChecker.onaudioprocess = function(e) {
     var buffer = e.inputBuffer.getChannelData(0);
@@ -118,7 +119,7 @@ var handleSuccess = function(stream) {
 
 
 
-navigator.mediaDevices.getUserMedia({ audio: true, video: false })
+navigator.mediaDevices.getUserMedia({ audio: true, video: false,sampleRate:16000 })
   .then(handleSuccess);
 
 //     oReq = new XMLHttpRequest();
